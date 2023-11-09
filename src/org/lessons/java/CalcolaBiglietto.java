@@ -34,7 +34,8 @@ public class CalcolaBiglietto {
 		
 		float fullPrice = PRICE_PER_KM*km;
 		
-		float discountedPrice = fullPrice-(fullPrice*discount);
+		String discountedPrice = String.format("%.2f", fullPrice - (fullPrice * discount));
+
 		
 		System.out.println("Sconto applicato: " + (int)(discount*100) + "%");
 		System.out.println("Prezzo biglietto finale: " + discountedPrice + "€");
